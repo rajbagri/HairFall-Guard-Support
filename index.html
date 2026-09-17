@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HairFall Guard Support</title>
+<style>
+  :root {
+    --bg: #f7f9f7; --bg-elevated: #ffffff; --text-primary: #1c2620; --text-secondary: #55645b;
+    --accent: #2f7d5f; --border: #e3e8e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121712; --bg-elevated: #1a221b; --text-primary: #eef2ee; --text-secondary: #a6b3a8;
+      --accent: #5fc79a; --border: #2a332b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .sub { color: var(--text-secondary); margin-bottom: 40px; }
+  .card {
+    background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px; margin-bottom: 20px;
+  }
+  .card h2 { font-size: 18px; margin: 0 0 8px; }
+  .card p { color: var(--text-secondary); margin: 0 0 12px; }
+  a.button {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: 15px;
+  }
+  a.link { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .faq-item { margin-bottom: 18px; }
+  .faq-item h3 { font-size: 15px; margin: 0 0 4px; }
+  .faq-item p { color: var(--text-secondary); margin: 0; font-size: 14px; }
+  footer { margin-top: 40px; color: var(--text-secondary); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>HairFall Guard Support</h1>
+  <p class="sub">We're here to help with anything related to the app.</p>
+
+  <div class="card">
+    <h2>Contact us</h2>
+    <p>For account issues, bugs, billing questions, or anything else — email us and we'll get back to you as soon as we can.</p>
+    <a class="button" href="mailto:rajbagri3214@gmail.com">Email Support</a>
+    <p style="margin-top:12px;font-size:14px;">Or reach us directly at
+      <a class="link" href="mailto:rajbagri3214@gmail.com">rajbagri3214@gmail.com</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Common questions</h2>
+    <div class="faq-item">
+      <h3>How do I delete my account?</h3>
+      <p>Open the app → Profile → Settings → Account → Delete Account. This permanently removes your scans, routine, and photos.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I cancel my Premium subscription?</h3>
+      <p>On your iPhone, go to Settings → [your name] → Subscriptions → HairFall Guard, and choose Cancel Subscription. You can also tap Restore Purchases in the app's paywall if a purchase isn't reflected on a new device.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is my data private?</h3>
+      <p>Yes — see our <a class="link" href="https://hairfallguardprivacy.netlify.app">Privacy Policy</a> for full details on what we collect and how it's used.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What are the terms of using the app?</h3>
+      <p>See our <a class="link" href="https://hairfalltermandservice.netlify.app">Terms of Service</a>.</p>
+    </div>
+  </div>
+
+  <footer>HairFall Guard &middot; Support</footer>
+</div>
+</body>
+</html>
